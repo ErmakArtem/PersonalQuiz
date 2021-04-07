@@ -42,12 +42,6 @@ class QuestionsViewController: UIViewController {
         setupUI()
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard segue.identifier == "showResult" else { return }
-//        let resultVC = segue.description as! ResultsViewController
-//        resultVC.responses
-//    }
-    
     @IBAction func singleButtonAnswerPressed(_ sender: UIButton) {
         guard let buttonIndex = singleButtons.firstIndex(of: sender) else { return }
         let currentAnswer = currentAnswers[buttonIndex]
